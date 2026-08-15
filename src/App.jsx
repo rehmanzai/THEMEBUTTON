@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import "./responsive.css";
+import "./Responsive.css";
 
-import NavBar from "./components/NavBar/NavBar.jsx";
+import NavBar from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import About from "./components/About-us/About-us.jsx";
 import Cards from "./components/Cards/Cards.jsx";
