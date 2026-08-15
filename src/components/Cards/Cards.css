@@ -1,0 +1,97 @@
+/* =========================
+   CARDS SECTION
+========================= */
+
+.cards-section {
+  padding: 90px 8%;
+  text-align: center;
+
+  background:
+    radial-gradient(circle at top left, #7de9e2, transparent 45%),
+    radial-gradient(circle at top right, #94c7de, transparent 45%),
+    radial-gradient(circle at bottom left, #5f9ef5, transparent 45%),
+    radial-gradient(circle at bottom right, #84b9ef, transparent 45%),
+    #ffdede;
+}
+
+.cards-section h2 {
+  font-size: 55px;
+  color: #0f172a;
+  margin-bottom: 55px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Base Card State (Hidden) */
+.card {
+  width: 320px;
+  padding: 35px 25px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  opacity: 0;
+  transform: translateY(30px);
+
+  transition: transform 1s ease, opacity 0.8s ease, box-shadow 0.6s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 40px;
+  color: #0b90f5;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.card button {
+  background: #fcc22e;
+  color: #063b53;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card button:hover {
+  background: #0f172a;
+  color: rgb(248, 252, 255);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .cards-section h2 {
+    font-size: 42px;
+  }
+}
